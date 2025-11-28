@@ -1,0 +1,34 @@
+// Fichier de note pour la migration des ressources
+
+INSTRUCTIONS POUR COPIER LES IMAGES:
+
+1. Images d'allumettes:
+   Source: Tp 2.3\img\istockphoto-1480287344-612x612.jpg
+   Destination: ProjetExercices\src\resources\images\allumettes\istockphoto-1480287344-612x612.jpg
+
+2. Images des cartes:
+   Source: Tp 2.9\Carte\*.png (52 fichiers)
+   Destination: ProjetExercices\src\resources\images\cartes\
+   
+   Format attendu:
+   - pique_1.png à pique_13.png
+   - coeur_1.png à coeur_13.png
+   - carreau_1.png à carreau_13.png
+   - trefle_1.png à trefle_13.png
+
+NOTE: L'application fonctionne même sans ces images grâce aux fallbacks implémentés.
+
+STRUCTURE FINALE:
+ProjetExercices/
+├── src/
+│   ├── Main.java
+│   ├── model/
+│   ├── view/
+│   ├── controller/
+│   └── resources/        ← Ressources DANS src (standard Maven/Gradle)
+│       ├── images/
+│       └── icons/
+├── bin/                  ← Classes compilées
+├── compile.bat
+├── run.bat
+└── README.md
